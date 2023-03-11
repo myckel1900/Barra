@@ -8,7 +8,12 @@
     width: 300px;
     height: 100%;
     background: #151719;
+    left: -300px;
+    transition: all 500ms linear;
+}
 
+#sidebar.active{
+    left: 0;
 }
 
 #sidebar ul li{
@@ -17,5 +22,26 @@
     padding: 15px 10px;
     list-style: none;
     border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+.logo{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 330px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #151719;
 }
 
